@@ -7,7 +7,7 @@ import { globalStyles } from '../styles/global.js';
 
 const { Navigator, Screen } = createStackNavigator();
 
-const HomeNavigator = () => (
+export const HomeStack = () => (
   <Navigator
     headerMode='float'
     screenOptions={{
@@ -24,8 +24,8 @@ const HomeNavigator = () => (
   </Navigator>
 );
 
-export const HomeStack = () => (
+export const HomeNavigator = () => (
   <NavigationContainer>
-    <HomeNavigator />
+    <HomeStack />
   </NavigationContainer>
 );

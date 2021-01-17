@@ -7,7 +7,7 @@ import About from '../screens/about';
 
 const { Navigator, Screen } = createStackNavigator();
 
-const AboutNavigator = () => (
+export const AboutStack = () => (
   <Navigator
     headerMode='float'
     screenOptions={{
@@ -19,7 +19,7 @@ const AboutNavigator = () => (
   </Navigator>
 );
 
-export const AboutStack = () => (
+export const AboutNavigator = () => (
   <NavigationContainer>
     <AppNavigator />
   </NavigationContainer>
